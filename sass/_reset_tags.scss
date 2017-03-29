@@ -1,0 +1,52 @@
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+section, footer{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav{
+  width: 100%;
+}
+header{
+  width: 100%;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+*{
+  font-family: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+  cursor: pointer;
+}
+iframe, p, img, table, ul, ol, li, div, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+span{
+  font-size: 14px;
+}
+/*table tags*/
+table {
+  border-spacing: 0;
+  border: 0;
+}
+/*form tags*/
+input, button, textarea {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: inherit;
+}

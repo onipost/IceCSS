@@ -1,0 +1,30 @@
+.img-stretch-width{
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.img-stretch-height{
+  width: auto;
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bg-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+.bg-contain{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-position: center center;
+  background-origin: padding-box;
+}

@@ -1,0 +1,28 @@
+$align-list: flex-start center flex-end;
+
+@mixin vertical-align ($branch, $rule, $-webkit-rule){
+  $i:0;
+  @each $key in top, center, bottom{
+    $i: $i + 1;
+    .#{$branch}-vertical-#{$key} {
+      #{$rule}: nth($align-list, $i)!important;
+      #{$-webkit-rule}: nth($align-list, $i)!important;
+    }
+  }
+}
+@mixin align ($branch, $rule, $-webkit-rule){
+  $i:0;
+  @each $key in start, center, end{
+    $i: $i + 1;
+    .#{$branch}-#{$key} {
+      #{$rule}: nth($align-list, $i)!important;
+      #{$-webkit-rule}:nth($align-list, $i)!important;
+    }
+  }
+}
+/*  ALIGN  */
+@include vertical-align(row, align-items, -webkit-align-items);
+@include vertical-align(column, justify-content, -webkit-justify-content);
+@include align(row, justify-content, -webkit-justify-content);
+@include align(column, align-items, -webkit-align-items);
+/*  END ALIGN  */

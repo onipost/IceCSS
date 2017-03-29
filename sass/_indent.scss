@@ -1,0 +1,38 @@
+$column-count: 12;
+$column-width: 100%/$column-count;
+
+@mixin indent ($route, $rule, $step) {
+  @for $i from 1 through $column-count{
+    .indent-#{$route}-#{$i} {
+      #{$rule}: $i*$step;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container, .container-responsive {
+    @include indent (ex-small-left, margin-left, $column-width);
+    @include indent (ex-small-right, margin-right, $column-width);
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-responsive {
+    @include indent (small-left, margin-left, $column-width);
+    @include indent (small-right, margin-right, $column-width);
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-responsive {
+    @include indent (medium-left, margin-left, $column-width);
+    @include indent (medium-right, margin-right, $column-width);
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-responsive {
+    @include indent (large-left, margin-left, $column-width);
+    @include indent (large-right, margin-right, $column-width);
+  }
+}
+
+@include indent (top, padding-top, 10px);
+@include indent (bottom, padding-bottom, 10px);

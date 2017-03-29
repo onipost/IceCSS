@@ -1,0 +1,75 @@
+@mixin container{
+  @include baseFlexBox;
+  @include flexDirection_row;
+  @include flexWrap_wrap;
+  @include flexJustify_c;
+  @include flexAlignItems_c;
+  @include flexAlignContent_fs;
+}
+
+@mixin dropdown{
+  @include baseFlexBoxPos_abs;
+  @include flexDirection_col;
+  @include flexWrap_wrap;
+  @include flexJustify_fs;
+  @include flexAlignItems_fs;
+  @include flexAlignContent_fs;
+}
+
+@mixin dropdownItem{
+  @include baseFlexBox;
+  @include flexDirection_row;
+  @include flexWrap_wrap;
+  @include flexJustify_c;
+  @include flexAlignItems_c;
+  @include flexAlignContent_fs;
+}
+header{
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  z-index: 10;
+  >ul{
+    @include container;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    list-style-type: none;
+    li{
+      position: relative;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin: 0 20px;
+      z-index: 1;
+    }
+    .dropdown{
+      ul{
+        @include dropdown;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: -1;
+        visibility: hidden;
+        background: #fff;
+        @include transition(300);
+        opacity: 0;
+        li{
+          display: flex;
+          width: 100%;
+          height: auto;
+          margin: 0 10px;
+          text-align: left;
+        }
+      }
+      &:hover ul{
+        opacity:1;
+        visibility: visible;
+        z-index:1;
+      }
+    }
+  }
+}

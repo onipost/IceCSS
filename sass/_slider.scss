@@ -1,0 +1,70 @@
+$white: #fff;
+$black: #000;
+$transparent: rgba(0,0,0,0);
+$green: #00B400;
+
+%slider_container_prefix{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-align-content: flex-start;
+}
+.slider_container{
+  @extend %slider_container_prefix;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+  .slider_item{
+    width: 100%;
+    position: relative;
+  }
+  .slider_position{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    bottom: 20px;
+    z-index: 1;
+    .position_point{
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: 1px solid $black;
+      background: $transparent;
+    }
+  }
+}
+#button-back, #button-next{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  background-size: 30%;
+  cursor: pointer;
+  z-index: 3;
+}
+#button-back{
+  left: 0;
+  background: url('../images/slides/left.png') no-repeat;
+  background-position: center left;
+}
+#button-next{
+  right: 0;
+  background: url('../images/slides/right.png') no-repeat;
+  background-position: center right;
+}
