@@ -1,6 +1,8 @@
 $column-count: 12;
 $column-width: 100%/$column-count;
 $align-list: flex-start center flex-end;
+$horizontal: (left, center, right);
+$vertical: (top, center, bottom);
 
 @import "_reset_tags";
 /* CORE */
@@ -23,6 +25,7 @@ $align-list: flex-start center flex-end;
 //TODO: дописать _hamburger (в частности под dropdown menu)
 //TODO: header dropdown:hover
 //TODO: дописать _text em/pixels ???
+
 //TODO: dropdown by click
 
 //JS

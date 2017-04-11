@@ -14,17 +14,5 @@
   margin: 0;
   padding: 0;
 }
-.bg-cover{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-clip: padding-box;
-  background-origin: padding-box;
-  background-position: center center;
-}
-.bg-contain{
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-clip: padding-box;
-  background-position: center center;
-  background-origin: padding-box;
-}
+@include bg(cover, $horizontal, $vertical);
+@include bg(contain, $horizontal, $vertical);

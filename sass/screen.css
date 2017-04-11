@@ -1655,19 +1655,131 @@ input, button, textarea {
   margin: 0;
   padding: 0; }
 
-.bg-cover {
+.bg-cover-lt {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center center; }
 
-.bg-contain {
+.bg-cover-lc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-lb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-ct {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-cc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-cb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-rt {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-rc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-cover-rb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-lt {
   background-repeat: no-repeat;
   background-size: contain;
   background-clip: padding-box;
-  background-position: center center;
-  background-origin: padding-box; }
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-lc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-lb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-ct {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-cc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-cb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-rt {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-rc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
+
+.bg-contain-rb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center; }
 
 .text-10 {
   font-size: 10px; }

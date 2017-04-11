@@ -2177,8 +2177,8 @@ input, button, textarea {
   padding: 0;
 }
 
-/* line 17, ../sass/_image.scss */
-.bg-cover {
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-lt {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
@@ -2186,13 +2186,157 @@ input, button, textarea {
   background-position: center center;
 }
 
-/* line 24, ../sass/_image.scss */
-.bg-contain {
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-lc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-lb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-ct {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-cc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-cb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-rt {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-rc {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-cover-rb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-lt {
   background-repeat: no-repeat;
   background-size: contain;
   background-clip: padding-box;
-  background-position: center center;
   background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-lc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-lb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-ct {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-cc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-cb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-rt {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-rc {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
+}
+
+/* line 143, ../sass/_mixins.scss */
+.bg-contain-rb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center center;
 }
 
 /* line 2, ../sass/_text.scss */

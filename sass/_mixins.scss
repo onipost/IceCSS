@@ -135,3 +135,18 @@
     }
   }
 }
+@mixin bg($property, $horizontal, $vertical){
+  @each $key_h in l, c, r{
+    $i:0;
+    @each $key_v in t, c, b {
+      $j:0;
+      .bg-#{$property}-#{$key_h}#{$key_v} {
+        background-repeat: no-repeat;
+        background-size: $property;
+        background-clip: padding-box;
+        background-origin: padding-box;
+        background-position: center center;
+      }
+    }
+  }
+}
