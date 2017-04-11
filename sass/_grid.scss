@@ -1,39 +1,14 @@
-$column-count: 12;
-$column-width: 100%/$column-count;
-
-@mixin container {
-  @include baseFlexBox;
-  @include flexDirection_row;
-  @include flexWrap_wrap;
-  @include flexJustify_fs;
-  @include flexAlignItems_fs;
-  @include flexAlignContent_fs;
-}
-@mixin columns ($name){
-  @for $i from 1 through $column-count{
-    .#{$name}-#{$i} {
-      width: $column-width*$i;
-      @include container;
-    }
-  }
-}
-@mixin autoWidth{
-  @include container;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-/*  ADAPTIVE CONTAINER  */
+/*  CONTAINER  */
 .container-responsive{
   width: 100%;
+  @include container;
 }
+
 .container {
+  width: 90%;
+  @include container;
   padding: 0;
   margin: 0 auto;
-}
-@media (max-width: 767px) {
-  .container {
-    width: 90%;
-  }
 }
 @media (min-width: 768px) {
   .container {
@@ -50,8 +25,9 @@ $column-width: 100%/$column-count;
     width: 1170px;
   }
 }
-/*  END ADAPTIVE CONTAINER  */
-/*  ADAPTIVE GRID  */
+/*  END CONTAINER  */
+
+/*  GRID  */
 .container, .container-responsive{
   @include columns (ex-small);
   .ex-small{
@@ -79,18 +55,4 @@ $column-width: 100%/$column-count;
     }
   }
 }
-/*  END ADAPTIVE GRID  */
-
-/*  OTHER  */
-.column{
-  -webkit-flex-direction: column!important;
-  flex-direction: column!important;
-}
-.row-reverse{
-  -webkit-flex-direction: row-reverse!important;
-  flex-direction: row-reverse!important;
-}
-.column-reverse{
-  -webkit-flex-direction: column-reverse!important;
-  flex-direction: column-reverse!important;
-}
+/*  END GRID  */

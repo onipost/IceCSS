@@ -1,0 +1,137 @@
+@mixin baseFlexBox{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+@mixin baseFlexBoxPos_abs{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+}
+@mixin flexDirection_row{
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+@mixin flexDirection_col{
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@mixin flexWrap_wrap{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@mixin flexWrap_nowrap{
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+@mixin flexJustify_fs{
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+@mixin flexJustify_c{
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@mixin flexJustify_fe{
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+@mixin flexAlignItems_fs{
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+@mixin flexAlignItems_c{
+  -webkit-align-items: center;
+  align-items: center;
+}
+@mixin flexAlignItems_fe{
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+@mixin flexAlignContent_fs{
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+@mixin flexAlignContent_c{
+  -webkit-align-content: center;
+  align-content: center;
+}
+@mixin flexAlignContent_fe{
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+@mixin container {
+  @include baseFlexBox;
+  @include flexDirection_row;
+  @include flexWrap_wrap;
+  @include flexJustify_fs;
+  @include flexAlignItems_fs;
+  @include flexAlignContent_fs;
+}
+
+@mixin transition ($delay){
+  -webkit-transition: all $delay+ms ease-in-out;
+  -moz-transition: all $delay+ms ease-in-out;
+  -ms-transition: all $delay+ms ease-in-out;
+  -o-transition: all $delay+ms ease-in-out;
+  transition: all $delay+ms ease-in-out;
+}
+
+@mixin columns ($name){
+  @for $i from 1 through $column-count{
+    .#{$name}-#{$i} {
+      -webkit-flex-basis: $column-width*$i;
+      flex-basis: $column-width*$i;
+      max-width: $column-width*$i;
+      @include container;
+    }
+  }
+}
+
+@mixin indent ($route, $rule, $step) {
+  @for $i from 1 through $column-count{
+    .indent-#{$route}-#{$i} {
+      #{$rule}: $i*$step;
+    }
+  }
+}
+
+@mixin autoWidth{
+  @include container;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+@mixin vertical-align ($branch, $rule, $-webkit-rule){
+  $i:0;
+  @each $key in top, center, bottom{
+    $i: $i + 1;
+    .#{$branch}-vertical-#{$key} {
+      #{$rule}: nth($align-list, $i)!important;
+      #{$-webkit-rule}: nth($align-list, $i)!important;
+    }
+  }
+}
+@mixin align ($branch, $rule, $-webkit-rule){
+  $i:0;
+  @each $key in start, center, end{
+    $i: $i + 1;
+    .#{$branch}-#{$key} {
+      #{$rule}: nth($align-list, $i)!important;
+      #{$-webkit-rule}:nth($align-list, $i)!important;
+    }
+  }
+}
+@mixin reordering($name){
+  @for $i from 1 through $column-count{
+    .order-#{$name}-#{$i}{
+      order: $i;
+    }
+  }
+}

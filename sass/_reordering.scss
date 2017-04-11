@@ -1,0 +1,11 @@
+@include reordering (ex-small);
+
+@media (min-width: 768px) {
+  @include reordering (small);
+}
+@media (min-width: 992px) {
+  @include reordering (medium);
+}
+@media (min-width: 1200px) {
+  @include reordering (large);
+}

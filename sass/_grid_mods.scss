@@ -1,0 +1,19 @@
+
+//Make column direction in container
+.column{
+  -webkit-flex-direction: column!important;
+  flex-direction: column!important;
+}
+.column-reverse{
+  -webkit-flex-direction: column-reverse!important;
+  flex-direction: column-reverse!important;
+}
+//Make row direction in container (default set to row)
+.row{
+  -webkit-flex-direction: row!important;
+  flex-direction: row!important;
+}
+.row-reverse{
+  -webkit-flex-direction: row-reverse!important;
+  flex-direction: row-reverse!important;
+}

@@ -72,47 +72,77 @@ input, button, textarea {
   background: inherit;
 }
 
-/*  ADAPTIVE CONTAINER  */
-/* line 26, ../sass/_grid.scss */
+/* CORE */
+/*  CONTAINER  */
+/* line 2, ../sass/_grid.scss */
 .container-responsive {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
 }
 
-/* line 29, ../sass/_grid.scss */
+/* line 7, ../sass/_grid.scss */
 .container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
   padding: 0;
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-  /* line 34, ../sass/_grid.scss */
-  .container {
-    width: 90%;
-  }
-}
 @media (min-width: 768px) {
-  /* line 39, ../sass/_grid.scss */
+  /* line 14, ../sass/_grid.scss */
   .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  /* line 44, ../sass/_grid.scss */
+  /* line 19, ../sass/_grid.scss */
   .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 49, ../sass/_grid.scss */
+  /* line 24, ../sass/_grid.scss */
   .container {
     width: 1170px;
   }
 }
-/*  END ADAPTIVE CONTAINER  */
-/*  ADAPTIVE GRID  */
-/* line 14, ../sass/_grid.scss */
+/*  END CONTAINER  */
+/*  GRID  */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-1, .container-responsive .ex-small-1 {
-  width: 8.33333%;
+  -webkit-flex-basis: 8.33333%;
+  flex-basis: 8.33333%;
+  max-width: 8.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -130,9 +160,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-2, .container-responsive .ex-small-2 {
-  width: 16.66667%;
+  -webkit-flex-basis: 16.66667%;
+  flex-basis: 16.66667%;
+  max-width: 16.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -150,9 +182,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-3, .container-responsive .ex-small-3 {
-  width: 25%;
+  -webkit-flex-basis: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -170,9 +204,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-4, .container-responsive .ex-small-4 {
-  width: 33.33333%;
+  -webkit-flex-basis: 33.33333%;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -190,9 +226,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-5, .container-responsive .ex-small-5 {
-  width: 41.66667%;
+  -webkit-flex-basis: 41.66667%;
+  flex-basis: 41.66667%;
+  max-width: 41.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -210,9 +248,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-6, .container-responsive .ex-small-6 {
-  width: 50%;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -230,9 +270,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-7, .container-responsive .ex-small-7 {
-  width: 58.33333%;
+  -webkit-flex-basis: 58.33333%;
+  flex-basis: 58.33333%;
+  max-width: 58.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -250,9 +292,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-8, .container-responsive .ex-small-8 {
-  width: 66.66667%;
+  -webkit-flex-basis: 66.66667%;
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -270,9 +314,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-9, .container-responsive .ex-small-9 {
-  width: 75%;
+  -webkit-flex-basis: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -290,9 +336,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-10, .container-responsive .ex-small-10 {
-  width: 83.33333%;
+  -webkit-flex-basis: 83.33333%;
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -310,9 +358,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-11, .container-responsive .ex-small-11 {
-  width: 91.66667%;
+  -webkit-flex-basis: 91.66667%;
+  flex-basis: 91.66667%;
+  max-width: 91.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -330,9 +380,11 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 14, ../sass/_grid.scss */
+/* line 88, ../sass/_mixins.scss */
 .container .ex-small-12, .container-responsive .ex-small-12 {
-  width: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -350,7 +402,7 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start;
 }
-/* line 57, ../sass/_grid.scss */
+/* line 33, ../sass/_grid.scss */
 .container .ex-small, .container-responsive .ex-small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,7 +424,7 @@ input, button, textarea {
   flex-basis: 0;
 }
 
-/* line 61, ../sass/_grid.scss */
+/* line 37, ../sass/_grid.scss */
 .container, .container-responsive {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,9 +444,11 @@ input, button, textarea {
   align-content: flex-start;
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-1, .container-responsive .small-1 {
-    width: 8.33333%;
+    -webkit-flex-basis: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -412,9 +466,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-2, .container-responsive .small-2 {
-    width: 16.66667%;
+    -webkit-flex-basis: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -432,9 +488,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-3, .container-responsive .small-3 {
-    width: 25%;
+    -webkit-flex-basis: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -452,9 +510,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-4, .container-responsive .small-4 {
-    width: 33.33333%;
+    -webkit-flex-basis: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -472,9 +532,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-5, .container-responsive .small-5 {
-    width: 41.66667%;
+    -webkit-flex-basis: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -492,9 +554,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-6, .container-responsive .small-6 {
-    width: 50%;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -512,9 +576,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-7, .container-responsive .small-7 {
-    width: 58.33333%;
+    -webkit-flex-basis: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -532,9 +598,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-8, .container-responsive .small-8 {
-    width: 66.66667%;
+    -webkit-flex-basis: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -552,9 +620,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-9, .container-responsive .small-9 {
-    width: 75%;
+    -webkit-flex-basis: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -572,9 +642,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-10, .container-responsive .small-10 {
-    width: 83.33333%;
+    -webkit-flex-basis: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -592,9 +664,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-11, .container-responsive .small-11 {
-    width: 91.66667%;
+    -webkit-flex-basis: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -612,9 +686,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .small-12, .container-responsive .small-12 {
-    width: 100%;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -632,7 +708,7 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 65, ../sass/_grid.scss */
+  /* line 41, ../sass/_grid.scss */
   .container .small, .container-responsive .small {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,9 +731,11 @@ input, button, textarea {
   }
 }
 @media (min-width: 992px) {
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-1, .container-responsive .medium-1 {
-    width: 8.33333%;
+    -webkit-flex-basis: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -675,9 +753,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-2, .container-responsive .medium-2 {
-    width: 16.66667%;
+    -webkit-flex-basis: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -695,9 +775,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-3, .container-responsive .medium-3 {
-    width: 25%;
+    -webkit-flex-basis: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -715,9 +797,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-4, .container-responsive .medium-4 {
-    width: 33.33333%;
+    -webkit-flex-basis: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -735,9 +819,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-5, .container-responsive .medium-5 {
-    width: 41.66667%;
+    -webkit-flex-basis: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -755,9 +841,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-6, .container-responsive .medium-6 {
-    width: 50%;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -775,9 +863,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-7, .container-responsive .medium-7 {
-    width: 58.33333%;
+    -webkit-flex-basis: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -795,9 +885,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-8, .container-responsive .medium-8 {
-    width: 66.66667%;
+    -webkit-flex-basis: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -815,9 +907,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-9, .container-responsive .medium-9 {
-    width: 75%;
+    -webkit-flex-basis: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -835,9 +929,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-10, .container-responsive .medium-10 {
-    width: 83.33333%;
+    -webkit-flex-basis: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -855,9 +951,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-11, .container-responsive .medium-11 {
-    width: 91.66667%;
+    -webkit-flex-basis: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -875,9 +973,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .medium-12, .container-responsive .medium-12 {
-    width: 100%;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -895,7 +995,7 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 71, ../sass/_grid.scss */
+  /* line 47, ../sass/_grid.scss */
   .container .medium, .container-responsive .medium {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -918,9 +1018,11 @@ input, button, textarea {
   }
 }
 @media (min-width: 1200px) {
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-1, .container-responsive .large-1 {
-    width: 8.33333%;
+    -webkit-flex-basis: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -938,9 +1040,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-2, .container-responsive .large-2 {
-    width: 16.66667%;
+    -webkit-flex-basis: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -958,9 +1062,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-3, .container-responsive .large-3 {
-    width: 25%;
+    -webkit-flex-basis: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -978,9 +1084,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-4, .container-responsive .large-4 {
-    width: 33.33333%;
+    -webkit-flex-basis: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -998,9 +1106,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-5, .container-responsive .large-5 {
-    width: 41.66667%;
+    -webkit-flex-basis: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1018,9 +1128,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-6, .container-responsive .large-6 {
-    width: 50%;
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1038,9 +1150,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-7, .container-responsive .large-7 {
-    width: 58.33333%;
+    -webkit-flex-basis: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1058,9 +1172,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-8, .container-responsive .large-8 {
-    width: 66.66667%;
+    -webkit-flex-basis: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1078,9 +1194,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-9, .container-responsive .large-9 {
-    width: 75%;
+    -webkit-flex-basis: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1098,9 +1216,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-10, .container-responsive .large-10 {
-    width: 83.33333%;
+    -webkit-flex-basis: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1118,9 +1238,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-11, .container-responsive .large-11 {
-    width: 91.66667%;
+    -webkit-flex-basis: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1138,9 +1260,11 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 14, ../sass/_grid.scss */
+  /* line 88, ../sass/_mixins.scss */
   .container .large-12, .container-responsive .large-12 {
-    width: 100%;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1158,7 +1282,7 @@ input, button, textarea {
     -webkit-align-content: flex-start;
     align-content: flex-start;
   }
-  /* line 77, ../sass/_grid.scss */
+  /* line 53, ../sass/_grid.scss */
   .container .large, .container-responsive .large {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1181,612 +1305,858 @@ input, button, textarea {
   }
 }
 
-/*  END ADAPTIVE GRID  */
-/*  OTHER  */
-/* line 85, ../sass/_grid.scss */
-.column {
-  -webkit-flex-direction: column !important;
-  flex-direction: column !important;
+/*  END GRID  */
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-1, .container-responsive .indent-ex-small-left-1 {
+  margin-left: 8.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-2, .container-responsive .indent-ex-small-left-2 {
+  margin-left: 16.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-3, .container-responsive .indent-ex-small-left-3 {
+  margin-left: 25%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-4, .container-responsive .indent-ex-small-left-4 {
+  margin-left: 33.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-5, .container-responsive .indent-ex-small-left-5 {
+  margin-left: 41.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-6, .container-responsive .indent-ex-small-left-6 {
+  margin-left: 50%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-7, .container-responsive .indent-ex-small-left-7 {
+  margin-left: 58.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-8, .container-responsive .indent-ex-small-left-8 {
+  margin-left: 66.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-9, .container-responsive .indent-ex-small-left-9 {
+  margin-left: 75%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-10, .container-responsive .indent-ex-small-left-10 {
+  margin-left: 83.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-11, .container-responsive .indent-ex-small-left-11 {
+  margin-left: 91.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-left-12, .container-responsive .indent-ex-small-left-12 {
+  margin-left: 100%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-1, .container-responsive .indent-ex-small-right-1 {
+  margin-right: 8.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-2, .container-responsive .indent-ex-small-right-2 {
+  margin-right: 16.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-3, .container-responsive .indent-ex-small-right-3 {
+  margin-right: 25%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-4, .container-responsive .indent-ex-small-right-4 {
+  margin-right: 33.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-5, .container-responsive .indent-ex-small-right-5 {
+  margin-right: 41.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-6, .container-responsive .indent-ex-small-right-6 {
+  margin-right: 50%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-7, .container-responsive .indent-ex-small-right-7 {
+  margin-right: 58.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-8, .container-responsive .indent-ex-small-right-8 {
+  margin-right: 66.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-9, .container-responsive .indent-ex-small-right-9 {
+  margin-right: 75%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-10, .container-responsive .indent-ex-small-right-10 {
+  margin-right: 83.33333%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-11, .container-responsive .indent-ex-small-right-11 {
+  margin-right: 91.66667%;
+}
+/* line 99, ../sass/_mixins.scss */
+.container .indent-ex-small-right-12, .container-responsive .indent-ex-small-right-12 {
+  margin-right: 100%;
 }
 
-/* line 89, ../sass/_grid.scss */
-.row-reverse {
-  -webkit-flex-direction: row-reverse !important;
-  flex-direction: row-reverse !important;
-}
-
-/* line 93, ../sass/_grid.scss */
-.column-reverse {
-  -webkit-flex-direction: column-reverse !important;
-  flex-direction: column-reverse !important;
-}
-
-@media (max-width: 767px) {
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-1, .container-responsive .indent-ex-small-left-1 {
-    margin-left: 8.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-2, .container-responsive .indent-ex-small-left-2 {
-    margin-left: 16.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-3, .container-responsive .indent-ex-small-left-3 {
-    margin-left: 25%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-4, .container-responsive .indent-ex-small-left-4 {
-    margin-left: 33.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-5, .container-responsive .indent-ex-small-left-5 {
-    margin-left: 41.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-6, .container-responsive .indent-ex-small-left-6 {
-    margin-left: 50%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-7, .container-responsive .indent-ex-small-left-7 {
-    margin-left: 58.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-8, .container-responsive .indent-ex-small-left-8 {
-    margin-left: 66.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-9, .container-responsive .indent-ex-small-left-9 {
-    margin-left: 75%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-10, .container-responsive .indent-ex-small-left-10 {
-    margin-left: 83.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-11, .container-responsive .indent-ex-small-left-11 {
-    margin-left: 91.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-left-12, .container-responsive .indent-ex-small-left-12 {
-    margin-left: 100%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-1, .container-responsive .indent-ex-small-right-1 {
-    margin-right: 8.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-2, .container-responsive .indent-ex-small-right-2 {
-    margin-right: 16.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-3, .container-responsive .indent-ex-small-right-3 {
-    margin-right: 25%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-4, .container-responsive .indent-ex-small-right-4 {
-    margin-right: 33.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-5, .container-responsive .indent-ex-small-right-5 {
-    margin-right: 41.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-6, .container-responsive .indent-ex-small-right-6 {
-    margin-right: 50%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-7, .container-responsive .indent-ex-small-right-7 {
-    margin-right: 58.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-8, .container-responsive .indent-ex-small-right-8 {
-    margin-right: 66.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-9, .container-responsive .indent-ex-small-right-9 {
-    margin-right: 75%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-10, .container-responsive .indent-ex-small-right-10 {
-    margin-right: 83.33333%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-11, .container-responsive .indent-ex-small-right-11 {
-    margin-right: 91.66667%;
-  }
-  /* line 6, ../sass/_indent.scss */
-  .container .indent-ex-small-right-12, .container-responsive .indent-ex-small-right-12 {
-    margin-right: 100%;
-  }
-}
 @media (min-width: 768px) {
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-1, .container-responsive .indent-small-left-1 {
     margin-left: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-2, .container-responsive .indent-small-left-2 {
     margin-left: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-3, .container-responsive .indent-small-left-3 {
     margin-left: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-4, .container-responsive .indent-small-left-4 {
     margin-left: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-5, .container-responsive .indent-small-left-5 {
     margin-left: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-6, .container-responsive .indent-small-left-6 {
     margin-left: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-7, .container-responsive .indent-small-left-7 {
     margin-left: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-8, .container-responsive .indent-small-left-8 {
     margin-left: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-9, .container-responsive .indent-small-left-9 {
     margin-left: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-10, .container-responsive .indent-small-left-10 {
     margin-left: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-11, .container-responsive .indent-small-left-11 {
     margin-left: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-left-12, .container-responsive .indent-small-left-12 {
     margin-left: 100%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-1, .container-responsive .indent-small-right-1 {
     margin-right: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-2, .container-responsive .indent-small-right-2 {
     margin-right: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-3, .container-responsive .indent-small-right-3 {
     margin-right: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-4, .container-responsive .indent-small-right-4 {
     margin-right: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-5, .container-responsive .indent-small-right-5 {
     margin-right: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-6, .container-responsive .indent-small-right-6 {
     margin-right: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-7, .container-responsive .indent-small-right-7 {
     margin-right: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-8, .container-responsive .indent-small-right-8 {
     margin-right: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-9, .container-responsive .indent-small-right-9 {
     margin-right: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-10, .container-responsive .indent-small-right-10 {
     margin-right: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-11, .container-responsive .indent-small-right-11 {
     margin-right: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-small-right-12, .container-responsive .indent-small-right-12 {
     margin-right: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-1, .container-responsive .indent-medium-left-1 {
     margin-left: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-2, .container-responsive .indent-medium-left-2 {
     margin-left: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-3, .container-responsive .indent-medium-left-3 {
     margin-left: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-4, .container-responsive .indent-medium-left-4 {
     margin-left: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-5, .container-responsive .indent-medium-left-5 {
     margin-left: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-6, .container-responsive .indent-medium-left-6 {
     margin-left: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-7, .container-responsive .indent-medium-left-7 {
     margin-left: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-8, .container-responsive .indent-medium-left-8 {
     margin-left: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-9, .container-responsive .indent-medium-left-9 {
     margin-left: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-10, .container-responsive .indent-medium-left-10 {
     margin-left: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-11, .container-responsive .indent-medium-left-11 {
     margin-left: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-left-12, .container-responsive .indent-medium-left-12 {
     margin-left: 100%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-1, .container-responsive .indent-medium-right-1 {
     margin-right: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-2, .container-responsive .indent-medium-right-2 {
     margin-right: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-3, .container-responsive .indent-medium-right-3 {
     margin-right: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-4, .container-responsive .indent-medium-right-4 {
     margin-right: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-5, .container-responsive .indent-medium-right-5 {
     margin-right: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-6, .container-responsive .indent-medium-right-6 {
     margin-right: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-7, .container-responsive .indent-medium-right-7 {
     margin-right: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-8, .container-responsive .indent-medium-right-8 {
     margin-right: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-9, .container-responsive .indent-medium-right-9 {
     margin-right: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-10, .container-responsive .indent-medium-right-10 {
     margin-right: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-11, .container-responsive .indent-medium-right-11 {
     margin-right: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-medium-right-12, .container-responsive .indent-medium-right-12 {
     margin-right: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-1, .container-responsive .indent-large-left-1 {
     margin-left: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-2, .container-responsive .indent-large-left-2 {
     margin-left: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-3, .container-responsive .indent-large-left-3 {
     margin-left: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-4, .container-responsive .indent-large-left-4 {
     margin-left: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-5, .container-responsive .indent-large-left-5 {
     margin-left: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-6, .container-responsive .indent-large-left-6 {
     margin-left: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-7, .container-responsive .indent-large-left-7 {
     margin-left: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-8, .container-responsive .indent-large-left-8 {
     margin-left: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-9, .container-responsive .indent-large-left-9 {
     margin-left: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-10, .container-responsive .indent-large-left-10 {
     margin-left: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-11, .container-responsive .indent-large-left-11 {
     margin-left: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-left-12, .container-responsive .indent-large-left-12 {
     margin-left: 100%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-1, .container-responsive .indent-large-right-1 {
     margin-right: 8.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-2, .container-responsive .indent-large-right-2 {
     margin-right: 16.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-3, .container-responsive .indent-large-right-3 {
     margin-right: 25%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-4, .container-responsive .indent-large-right-4 {
     margin-right: 33.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-5, .container-responsive .indent-large-right-5 {
     margin-right: 41.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-6, .container-responsive .indent-large-right-6 {
     margin-right: 50%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-7, .container-responsive .indent-large-right-7 {
     margin-right: 58.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-8, .container-responsive .indent-large-right-8 {
     margin-right: 66.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-9, .container-responsive .indent-large-right-9 {
     margin-right: 75%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-10, .container-responsive .indent-large-right-10 {
     margin-right: 83.33333%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-11, .container-responsive .indent-large-right-11 {
     margin-right: 91.66667%;
   }
-  /* line 6, ../sass/_indent.scss */
+  /* line 99, ../sass/_mixins.scss */
   .container .indent-large-right-12, .container-responsive .indent-large-right-12 {
     margin-right: 100%;
   }
 }
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-1 {
   padding-top: 10px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-2 {
   padding-top: 20px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-3 {
   padding-top: 30px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-4 {
   padding-top: 40px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-5 {
   padding-top: 50px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-6 {
   padding-top: 60px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-7 {
   padding-top: 70px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-8 {
   padding-top: 80px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-9 {
   padding-top: 90px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-10 {
   padding-top: 100px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-11 {
   padding-top: 110px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-top-12 {
   padding-top: 120px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-1 {
   padding-bottom: 10px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-2 {
   padding-bottom: 20px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-3 {
   padding-bottom: 30px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-4 {
   padding-bottom: 40px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-5 {
   padding-bottom: 50px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-6 {
   padding-bottom: 60px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-7 {
   padding-bottom: 70px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-8 {
   padding-bottom: 80px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-9 {
   padding-bottom: 90px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-10 {
   padding-bottom: 100px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-11 {
   padding-bottom: 110px;
 }
 
-/* line 6, ../sass/_indent.scss */
+/* line 99, ../sass/_mixins.scss */
 .indent-bottom-12 {
   padding-bottom: 120px;
 }
 
-/*  ALIGN  */
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .row-vertical-top {
   align-items: flex-start !important;
   -webkit-align-items: flex-start !important;
 }
 
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .row-vertical-center {
   align-items: center !important;
   -webkit-align-items: center !important;
 }
 
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .row-vertical-bottom {
   align-items: flex-end !important;
   -webkit-align-items: flex-end !important;
 }
 
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .column-vertical-top {
   justify-content: flex-start !important;
   -webkit-justify-content: flex-start !important;
 }
 
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .column-vertical-center {
   justify-content: center !important;
   -webkit-justify-content: center !important;
 }
 
-/* line 7, ../sass/_alignment.scss */
+/* line 115, ../sass/_mixins.scss */
 .column-vertical-bottom {
   justify-content: flex-end !important;
   -webkit-justify-content: flex-end !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .row-start {
   justify-content: flex-start !important;
   -webkit-justify-content: flex-start !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .row-center {
   justify-content: center !important;
   -webkit-justify-content: center !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .row-end {
   justify-content: flex-end !important;
   -webkit-justify-content: flex-end !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .column-start {
   align-items: flex-start !important;
   -webkit-align-items: flex-start !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .column-center {
   align-items: center !important;
   -webkit-align-items: center !important;
 }
 
-/* line 17, ../sass/_alignment.scss */
+/* line 125, ../sass/_mixins.scss */
 .column-end {
   align-items: flex-end !important;
   -webkit-align-items: flex-end !important;
 }
 
-/*  END ALIGN  */
+/* END CORE */
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-1 {
+  order: 1;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-2 {
+  order: 2;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-3 {
+  order: 3;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-4 {
+  order: 4;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-5 {
+  order: 5;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-6 {
+  order: 6;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-7 {
+  order: 7;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-8 {
+  order: 8;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-9 {
+  order: 9;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-10 {
+  order: 10;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-11 {
+  order: 11;
+}
+
+/* line 133, ../sass/_mixins.scss */
+.order-ex-small-12 {
+  order: 12;
+}
+
+@media (min-width: 768px) {
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-1 {
+    order: 1;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-2 {
+    order: 2;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-3 {
+    order: 3;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-4 {
+    order: 4;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-5 {
+    order: 5;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-6 {
+    order: 6;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-7 {
+    order: 7;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-8 {
+    order: 8;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-9 {
+    order: 9;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-10 {
+    order: 10;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-11 {
+    order: 11;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-small-12 {
+    order: 12;
+  }
+}
+@media (min-width: 992px) {
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-1 {
+    order: 1;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-2 {
+    order: 2;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-3 {
+    order: 3;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-4 {
+    order: 4;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-5 {
+    order: 5;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-6 {
+    order: 6;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-7 {
+    order: 7;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-8 {
+    order: 8;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-9 {
+    order: 9;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-10 {
+    order: 10;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-11 {
+    order: 11;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-medium-12 {
+    order: 12;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-1 {
+    order: 1;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-2 {
+    order: 2;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-3 {
+    order: 3;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-4 {
+    order: 4;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-5 {
+    order: 5;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-6 {
+    order: 6;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-7 {
+    order: 7;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-8 {
+    order: 8;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-9 {
+    order: 9;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-10 {
+    order: 10;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-11 {
+    order: 11;
+  }
+
+  /* line 133, ../sass/_mixins.scss */
+  .order-large-12 {
+    order: 12;
+  }
+}
+/* line 3, ../sass/_grid_mods.scss */
+.column {
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+/* line 7, ../sass/_grid_mods.scss */
+.column-reverse {
+  -webkit-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+}
+
+/* line 12, ../sass/_grid_mods.scss */
+.row {
+  -webkit-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+/* line 16, ../sass/_grid_mods.scss */
+.row-reverse {
+  -webkit-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
 /* line 1, ../sass/_image.scss */
 .img-stretch-width {
   width: 100%;

@@ -50,17 +50,48 @@ input, button, textarea {
   margin: 0;
   background: inherit; }
 
-/*  ADAPTIVE CONTAINER  */
+/* CORE */
+/*  CONTAINER  */
 .container-responsive {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start; }
 
 .container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
   padding: 0;
   margin: 0 auto; }
 
-@media (max-width: 767px) {
-  .container {
-    width: 90%; } }
 @media (min-width: 768px) {
   .container {
     width: 750px; } }
@@ -70,10 +101,12 @@ input, button, textarea {
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
-/*  END ADAPTIVE CONTAINER  */
-/*  ADAPTIVE GRID  */
+/*  END CONTAINER  */
+/*  GRID  */
 .container .ex-small-1, .container-responsive .ex-small-1 {
-  width: 8.33333%;
+  -webkit-flex-basis: 8.33333%;
+  flex-basis: 8.33333%;
+  max-width: 8.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -91,7 +124,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-2, .container-responsive .ex-small-2 {
-  width: 16.66667%;
+  -webkit-flex-basis: 16.66667%;
+  flex-basis: 16.66667%;
+  max-width: 16.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -109,7 +144,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-3, .container-responsive .ex-small-3 {
-  width: 25%;
+  -webkit-flex-basis: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -127,7 +164,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-4, .container-responsive .ex-small-4 {
-  width: 33.33333%;
+  -webkit-flex-basis: 33.33333%;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -145,7 +184,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-5, .container-responsive .ex-small-5 {
-  width: 41.66667%;
+  -webkit-flex-basis: 41.66667%;
+  flex-basis: 41.66667%;
+  max-width: 41.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -163,7 +204,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-6, .container-responsive .ex-small-6 {
-  width: 50%;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -181,7 +224,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-7, .container-responsive .ex-small-7 {
-  width: 58.33333%;
+  -webkit-flex-basis: 58.33333%;
+  flex-basis: 58.33333%;
+  max-width: 58.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -199,7 +244,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-8, .container-responsive .ex-small-8 {
-  width: 66.66667%;
+  -webkit-flex-basis: 66.66667%;
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -217,7 +264,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-9, .container-responsive .ex-small-9 {
-  width: 75%;
+  -webkit-flex-basis: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -235,7 +284,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-10, .container-responsive .ex-small-10 {
-  width: 83.33333%;
+  -webkit-flex-basis: 83.33333%;
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -253,7 +304,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-11, .container-responsive .ex-small-11 {
-  width: 91.66667%;
+  -webkit-flex-basis: 91.66667%;
+  flex-basis: 91.66667%;
+  max-width: 91.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -271,7 +324,9 @@ input, button, textarea {
   -webkit-align-content: flex-start;
   align-content: flex-start; }
 .container .ex-small-12, .container-responsive .ex-small-12 {
-  width: 100%;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -327,7 +382,9 @@ input, button, textarea {
   align-content: flex-start; }
   @media (min-width: 768px) {
     .container .small-1, .container-responsive .small-1 {
-      width: 8.33333%;
+      -webkit-flex-basis: 8.33333%;
+      flex-basis: 8.33333%;
+      max-width: 8.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -345,7 +402,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-2, .container-responsive .small-2 {
-      width: 16.66667%;
+      -webkit-flex-basis: 16.66667%;
+      flex-basis: 16.66667%;
+      max-width: 16.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -363,7 +422,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-3, .container-responsive .small-3 {
-      width: 25%;
+      -webkit-flex-basis: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -381,7 +442,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-4, .container-responsive .small-4 {
-      width: 33.33333%;
+      -webkit-flex-basis: 33.33333%;
+      flex-basis: 33.33333%;
+      max-width: 33.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -399,7 +462,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-5, .container-responsive .small-5 {
-      width: 41.66667%;
+      -webkit-flex-basis: 41.66667%;
+      flex-basis: 41.66667%;
+      max-width: 41.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -417,7 +482,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-6, .container-responsive .small-6 {
-      width: 50%;
+      -webkit-flex-basis: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -435,7 +502,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-7, .container-responsive .small-7 {
-      width: 58.33333%;
+      -webkit-flex-basis: 58.33333%;
+      flex-basis: 58.33333%;
+      max-width: 58.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -453,7 +522,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-8, .container-responsive .small-8 {
-      width: 66.66667%;
+      -webkit-flex-basis: 66.66667%;
+      flex-basis: 66.66667%;
+      max-width: 66.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -471,7 +542,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-9, .container-responsive .small-9 {
-      width: 75%;
+      -webkit-flex-basis: 75%;
+      flex-basis: 75%;
+      max-width: 75%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -489,7 +562,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-10, .container-responsive .small-10 {
-      width: 83.33333%;
+      -webkit-flex-basis: 83.33333%;
+      flex-basis: 83.33333%;
+      max-width: 83.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -507,7 +582,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-11, .container-responsive .small-11 {
-      width: 91.66667%;
+      -webkit-flex-basis: 91.66667%;
+      flex-basis: 91.66667%;
+      max-width: 91.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -525,7 +602,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .small-12, .container-responsive .small-12 {
-      width: 100%;
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -563,7 +642,9 @@ input, button, textarea {
       flex-basis: 0; } }
   @media (min-width: 992px) {
     .container .medium-1, .container-responsive .medium-1 {
-      width: 8.33333%;
+      -webkit-flex-basis: 8.33333%;
+      flex-basis: 8.33333%;
+      max-width: 8.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -581,7 +662,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-2, .container-responsive .medium-2 {
-      width: 16.66667%;
+      -webkit-flex-basis: 16.66667%;
+      flex-basis: 16.66667%;
+      max-width: 16.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -599,7 +682,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-3, .container-responsive .medium-3 {
-      width: 25%;
+      -webkit-flex-basis: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -617,7 +702,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-4, .container-responsive .medium-4 {
-      width: 33.33333%;
+      -webkit-flex-basis: 33.33333%;
+      flex-basis: 33.33333%;
+      max-width: 33.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -635,7 +722,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-5, .container-responsive .medium-5 {
-      width: 41.66667%;
+      -webkit-flex-basis: 41.66667%;
+      flex-basis: 41.66667%;
+      max-width: 41.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -653,7 +742,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-6, .container-responsive .medium-6 {
-      width: 50%;
+      -webkit-flex-basis: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -671,7 +762,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-7, .container-responsive .medium-7 {
-      width: 58.33333%;
+      -webkit-flex-basis: 58.33333%;
+      flex-basis: 58.33333%;
+      max-width: 58.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -689,7 +782,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-8, .container-responsive .medium-8 {
-      width: 66.66667%;
+      -webkit-flex-basis: 66.66667%;
+      flex-basis: 66.66667%;
+      max-width: 66.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -707,7 +802,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-9, .container-responsive .medium-9 {
-      width: 75%;
+      -webkit-flex-basis: 75%;
+      flex-basis: 75%;
+      max-width: 75%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -725,7 +822,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-10, .container-responsive .medium-10 {
-      width: 83.33333%;
+      -webkit-flex-basis: 83.33333%;
+      flex-basis: 83.33333%;
+      max-width: 83.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -743,7 +842,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-11, .container-responsive .medium-11 {
-      width: 91.66667%;
+      -webkit-flex-basis: 91.66667%;
+      flex-basis: 91.66667%;
+      max-width: 91.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -761,7 +862,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .medium-12, .container-responsive .medium-12 {
-      width: 100%;
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -799,7 +902,9 @@ input, button, textarea {
       flex-basis: 0; } }
   @media (min-width: 1200px) {
     .container .large-1, .container-responsive .large-1 {
-      width: 8.33333%;
+      -webkit-flex-basis: 8.33333%;
+      flex-basis: 8.33333%;
+      max-width: 8.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -817,7 +922,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-2, .container-responsive .large-2 {
-      width: 16.66667%;
+      -webkit-flex-basis: 16.66667%;
+      flex-basis: 16.66667%;
+      max-width: 16.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -835,7 +942,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-3, .container-responsive .large-3 {
-      width: 25%;
+      -webkit-flex-basis: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -853,7 +962,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-4, .container-responsive .large-4 {
-      width: 33.33333%;
+      -webkit-flex-basis: 33.33333%;
+      flex-basis: 33.33333%;
+      max-width: 33.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -871,7 +982,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-5, .container-responsive .large-5 {
-      width: 41.66667%;
+      -webkit-flex-basis: 41.66667%;
+      flex-basis: 41.66667%;
+      max-width: 41.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -889,7 +1002,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-6, .container-responsive .large-6 {
-      width: 50%;
+      -webkit-flex-basis: 50%;
+      flex-basis: 50%;
+      max-width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -907,7 +1022,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-7, .container-responsive .large-7 {
-      width: 58.33333%;
+      -webkit-flex-basis: 58.33333%;
+      flex-basis: 58.33333%;
+      max-width: 58.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -925,7 +1042,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-8, .container-responsive .large-8 {
-      width: 66.66667%;
+      -webkit-flex-basis: 66.66667%;
+      flex-basis: 66.66667%;
+      max-width: 66.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -943,7 +1062,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-9, .container-responsive .large-9 {
-      width: 75%;
+      -webkit-flex-basis: 75%;
+      flex-basis: 75%;
+      max-width: 75%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -961,7 +1082,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-10, .container-responsive .large-10 {
-      width: 83.33333%;
+      -webkit-flex-basis: 83.33333%;
+      flex-basis: 83.33333%;
+      max-width: 83.33333%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -979,7 +1102,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-11, .container-responsive .large-11 {
-      width: 91.66667%;
+      -webkit-flex-basis: 91.66667%;
+      flex-basis: 91.66667%;
+      max-width: 91.66667%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -997,7 +1122,9 @@ input, button, textarea {
       -webkit-align-content: flex-start;
       align-content: flex-start; }
     .container .large-12, .container-responsive .large-12 {
-      width: 100%;
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -1034,69 +1161,56 @@ input, button, textarea {
       flex-grow: 1;
       flex-basis: 0; } }
 
-/*  END ADAPTIVE GRID  */
-/*  OTHER  */
-.column {
-  -webkit-flex-direction: column !important;
-  flex-direction: column !important; }
+/*  END GRID  */
+.container .indent-ex-small-left-1, .container-responsive .indent-ex-small-left-1 {
+  margin-left: 8.33333%; }
+.container .indent-ex-small-left-2, .container-responsive .indent-ex-small-left-2 {
+  margin-left: 16.66667%; }
+.container .indent-ex-small-left-3, .container-responsive .indent-ex-small-left-3 {
+  margin-left: 25%; }
+.container .indent-ex-small-left-4, .container-responsive .indent-ex-small-left-4 {
+  margin-left: 33.33333%; }
+.container .indent-ex-small-left-5, .container-responsive .indent-ex-small-left-5 {
+  margin-left: 41.66667%; }
+.container .indent-ex-small-left-6, .container-responsive .indent-ex-small-left-6 {
+  margin-left: 50%; }
+.container .indent-ex-small-left-7, .container-responsive .indent-ex-small-left-7 {
+  margin-left: 58.33333%; }
+.container .indent-ex-small-left-8, .container-responsive .indent-ex-small-left-8 {
+  margin-left: 66.66667%; }
+.container .indent-ex-small-left-9, .container-responsive .indent-ex-small-left-9 {
+  margin-left: 75%; }
+.container .indent-ex-small-left-10, .container-responsive .indent-ex-small-left-10 {
+  margin-left: 83.33333%; }
+.container .indent-ex-small-left-11, .container-responsive .indent-ex-small-left-11 {
+  margin-left: 91.66667%; }
+.container .indent-ex-small-left-12, .container-responsive .indent-ex-small-left-12 {
+  margin-left: 100%; }
+.container .indent-ex-small-right-1, .container-responsive .indent-ex-small-right-1 {
+  margin-right: 8.33333%; }
+.container .indent-ex-small-right-2, .container-responsive .indent-ex-small-right-2 {
+  margin-right: 16.66667%; }
+.container .indent-ex-small-right-3, .container-responsive .indent-ex-small-right-3 {
+  margin-right: 25%; }
+.container .indent-ex-small-right-4, .container-responsive .indent-ex-small-right-4 {
+  margin-right: 33.33333%; }
+.container .indent-ex-small-right-5, .container-responsive .indent-ex-small-right-5 {
+  margin-right: 41.66667%; }
+.container .indent-ex-small-right-6, .container-responsive .indent-ex-small-right-6 {
+  margin-right: 50%; }
+.container .indent-ex-small-right-7, .container-responsive .indent-ex-small-right-7 {
+  margin-right: 58.33333%; }
+.container .indent-ex-small-right-8, .container-responsive .indent-ex-small-right-8 {
+  margin-right: 66.66667%; }
+.container .indent-ex-small-right-9, .container-responsive .indent-ex-small-right-9 {
+  margin-right: 75%; }
+.container .indent-ex-small-right-10, .container-responsive .indent-ex-small-right-10 {
+  margin-right: 83.33333%; }
+.container .indent-ex-small-right-11, .container-responsive .indent-ex-small-right-11 {
+  margin-right: 91.66667%; }
+.container .indent-ex-small-right-12, .container-responsive .indent-ex-small-right-12 {
+  margin-right: 100%; }
 
-.row-reverse {
-  -webkit-flex-direction: row-reverse !important;
-  flex-direction: row-reverse !important; }
-
-.column-reverse {
-  -webkit-flex-direction: column-reverse !important;
-  flex-direction: column-reverse !important; }
-
-@media (max-width: 767px) {
-  .container .indent-ex-small-left-1, .container-responsive .indent-ex-small-left-1 {
-    margin-left: 8.33333%; }
-  .container .indent-ex-small-left-2, .container-responsive .indent-ex-small-left-2 {
-    margin-left: 16.66667%; }
-  .container .indent-ex-small-left-3, .container-responsive .indent-ex-small-left-3 {
-    margin-left: 25%; }
-  .container .indent-ex-small-left-4, .container-responsive .indent-ex-small-left-4 {
-    margin-left: 33.33333%; }
-  .container .indent-ex-small-left-5, .container-responsive .indent-ex-small-left-5 {
-    margin-left: 41.66667%; }
-  .container .indent-ex-small-left-6, .container-responsive .indent-ex-small-left-6 {
-    margin-left: 50%; }
-  .container .indent-ex-small-left-7, .container-responsive .indent-ex-small-left-7 {
-    margin-left: 58.33333%; }
-  .container .indent-ex-small-left-8, .container-responsive .indent-ex-small-left-8 {
-    margin-left: 66.66667%; }
-  .container .indent-ex-small-left-9, .container-responsive .indent-ex-small-left-9 {
-    margin-left: 75%; }
-  .container .indent-ex-small-left-10, .container-responsive .indent-ex-small-left-10 {
-    margin-left: 83.33333%; }
-  .container .indent-ex-small-left-11, .container-responsive .indent-ex-small-left-11 {
-    margin-left: 91.66667%; }
-  .container .indent-ex-small-left-12, .container-responsive .indent-ex-small-left-12 {
-    margin-left: 100%; }
-  .container .indent-ex-small-right-1, .container-responsive .indent-ex-small-right-1 {
-    margin-right: 8.33333%; }
-  .container .indent-ex-small-right-2, .container-responsive .indent-ex-small-right-2 {
-    margin-right: 16.66667%; }
-  .container .indent-ex-small-right-3, .container-responsive .indent-ex-small-right-3 {
-    margin-right: 25%; }
-  .container .indent-ex-small-right-4, .container-responsive .indent-ex-small-right-4 {
-    margin-right: 33.33333%; }
-  .container .indent-ex-small-right-5, .container-responsive .indent-ex-small-right-5 {
-    margin-right: 41.66667%; }
-  .container .indent-ex-small-right-6, .container-responsive .indent-ex-small-right-6 {
-    margin-right: 50%; }
-  .container .indent-ex-small-right-7, .container-responsive .indent-ex-small-right-7 {
-    margin-right: 58.33333%; }
-  .container .indent-ex-small-right-8, .container-responsive .indent-ex-small-right-8 {
-    margin-right: 66.66667%; }
-  .container .indent-ex-small-right-9, .container-responsive .indent-ex-small-right-9 {
-    margin-right: 75%; }
-  .container .indent-ex-small-right-10, .container-responsive .indent-ex-small-right-10 {
-    margin-right: 83.33333%; }
-  .container .indent-ex-small-right-11, .container-responsive .indent-ex-small-right-11 {
-    margin-right: 91.66667%; }
-  .container .indent-ex-small-right-12, .container-responsive .indent-ex-small-right-12 {
-    margin-right: 100%; } }
 @media (min-width: 768px) {
   .container .indent-small-left-1, .container-responsive .indent-small-left-1 {
     margin-left: 8.33333%; }
@@ -1316,7 +1430,6 @@ input, button, textarea {
 .indent-bottom-12 {
   padding-bottom: 120px; }
 
-/*  ALIGN  */
 .row-vertical-top {
   align-items: flex-start !important;
   -webkit-align-items: flex-start !important; }
@@ -1365,7 +1478,167 @@ input, button, textarea {
   align-items: flex-end !important;
   -webkit-align-items: flex-end !important; }
 
-/*  END ALIGN  */
+/* END CORE */
+.order-ex-small-1 {
+  order: 1; }
+
+.order-ex-small-2 {
+  order: 2; }
+
+.order-ex-small-3 {
+  order: 3; }
+
+.order-ex-small-4 {
+  order: 4; }
+
+.order-ex-small-5 {
+  order: 5; }
+
+.order-ex-small-6 {
+  order: 6; }
+
+.order-ex-small-7 {
+  order: 7; }
+
+.order-ex-small-8 {
+  order: 8; }
+
+.order-ex-small-9 {
+  order: 9; }
+
+.order-ex-small-10 {
+  order: 10; }
+
+.order-ex-small-11 {
+  order: 11; }
+
+.order-ex-small-12 {
+  order: 12; }
+
+@media (min-width: 768px) {
+  .order-small-1 {
+    order: 1; }
+
+  .order-small-2 {
+    order: 2; }
+
+  .order-small-3 {
+    order: 3; }
+
+  .order-small-4 {
+    order: 4; }
+
+  .order-small-5 {
+    order: 5; }
+
+  .order-small-6 {
+    order: 6; }
+
+  .order-small-7 {
+    order: 7; }
+
+  .order-small-8 {
+    order: 8; }
+
+  .order-small-9 {
+    order: 9; }
+
+  .order-small-10 {
+    order: 10; }
+
+  .order-small-11 {
+    order: 11; }
+
+  .order-small-12 {
+    order: 12; } }
+@media (min-width: 992px) {
+  .order-medium-1 {
+    order: 1; }
+
+  .order-medium-2 {
+    order: 2; }
+
+  .order-medium-3 {
+    order: 3; }
+
+  .order-medium-4 {
+    order: 4; }
+
+  .order-medium-5 {
+    order: 5; }
+
+  .order-medium-6 {
+    order: 6; }
+
+  .order-medium-7 {
+    order: 7; }
+
+  .order-medium-8 {
+    order: 8; }
+
+  .order-medium-9 {
+    order: 9; }
+
+  .order-medium-10 {
+    order: 10; }
+
+  .order-medium-11 {
+    order: 11; }
+
+  .order-medium-12 {
+    order: 12; } }
+@media (min-width: 1200px) {
+  .order-large-1 {
+    order: 1; }
+
+  .order-large-2 {
+    order: 2; }
+
+  .order-large-3 {
+    order: 3; }
+
+  .order-large-4 {
+    order: 4; }
+
+  .order-large-5 {
+    order: 5; }
+
+  .order-large-6 {
+    order: 6; }
+
+  .order-large-7 {
+    order: 7; }
+
+  .order-large-8 {
+    order: 8; }
+
+  .order-large-9 {
+    order: 9; }
+
+  .order-large-10 {
+    order: 10; }
+
+  .order-large-11 {
+    order: 11; }
+
+  .order-large-12 {
+    order: 12; } }
+.column {
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important; }
+
+.column-reverse {
+  -webkit-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important; }
+
+.row {
+  -webkit-flex-direction: row !important;
+  flex-direction: row !important; }
+
+.row-reverse {
+  -webkit-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important; }
+
 .img-stretch-width {
   width: 100%;
   display: block;
